@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Locality, Contextuality, and Epistemology</title>
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> 
+    <link href="../style/style.css" rel="stylesheet" type="text/css" media="all">    
+  </head>
+  <body>
+    <div id="container">
+    <div id="header">...</div>
+    <div id="content">
+      <h1 id="postTitleH1"></h1>
+      <h4 id="postDate"></h4>
+
+      <p>One of the most fascinating aspects of "quantum theory" (broadly speaking) is it upheaves the notion that everything can be defined deterministically. For instance, predictions in quantum mechanics are purely probabilistic; in principle, then, there is really no way of distinguishing whether or not the outcome of an experiment aligns with prediction. For instance, let's say the probability of observing a distribution A is less than 1%; then, let's say we perform some experiment, and the distribution we get is exactly A. Either our prediction was misguided, or we obtained an incredibly improbable outcome; really, there is not a good way of distinguishing between the two, besides performing another experiment. Since the universe is so massive, it is not at all a stretch to say that one-in-a-quadrillion occurences happen every day; in fact, they happen multiple times a day.</p>
+      
+	<p>This is quite the pickle, but it isn't even the biggest conundrum for quantum physics. That honor belongs to, in my opinion, the somewhat-related <a href="https://plato.stanford.edu/entries/kochen-specker/">Kochen-Specker theorem</a>, a result which essentially says that it's impossible to assign local data everywhile while respecting the "functorial" (relational) structure of a system. Meaning, if I have an ensemble of <em>locales</em>, then I cannot simultaneously predict the outcomes of each of the locales in a <em>global</em> way. Let T be a topological space, partitioned into subspaces t_i. Then, suppose I have some function m(t_i) which converts each of the subspaces into a measuremtn. There is, according to Kochen-Specker, no valid way to reconstruct m(T) by summing over all the m(t_i). That is, the measurement of the space itself is not <em>representable as a set</em>.
+    
+    <p>This is what is known as <a href="https://arxiv.org/abs/2102.13036">(quantum) contextuality</a>. </p>
+    
+    <h2>Enter: Factorization Algebras (FAs)</h2>
+    <p>Before we can talk about factorization algebras, we need to know what a "sheaf" is. Essentially, a sheaf is a way of making sure we can "glue" all of the measurements (or functions, or whatever else you'd like) together in such a way that the local perspectives <em>agree</em> with the global ones; so that, if we restrict ourselves to a locale t_i, then the value of a function like m(T) should agree with the value of m(t_i); in order to do this, we need to make sure there are no major <a href="https://byjus.com/maths/discontinuity/">discontinuities</a>.</p>
+    
+    <p>This is where <a href="https://arxiv.org/abs/2310.06137">factorization algebras</a> come in: essentially, an FA is a way of "tensoring" subspaces (locales) together in an essentially additive way. This is basically a souped-up version of traditional QM: addition combines elements within a space, staying in that space; tensor product combines spaces themselves, creating a larger space where new kinds of combinations live; so, both are ways to combine “pieces” into “wholes,” with tensor product acting like a multiplication (in dimension) and addition like a sum (in values or vectors).</p>
+    
+    <p>Factorization algebras not only take this idea to heart, but do so in an <a href="https://www.ams.org/notices/200406/what-is.pdf">operadic way</a>. Specifically, <a href="https://arxiv.org/pdf/1206.5522">Ayala and Francis</a> tell us that factorization is a lot like the <a href="https://arxiv.org/abs/math/0610236">little disks operad</a>. This is essentially a way of "embedding circles inside of circles", but keep in mind that to the topologist, the circle is actually a very versatile object; so, we are concerned not just with geometric circles, but with <em>all geometric neighborhoods</em> homeomorphic to S^1</p>
+    
+    <h2>Contextuality</h2>
+    
+    <p>Surprisingly, contextuality has not been combined with factorization algebras; at least not until <a href="https://www.authorea.com/users/854182/articles/1310041-an-application-of-modal-logic-to-costello-gwilliam-factorization-algebras">my recent paper</a>, which explores the link in a genuine way.</p>
+    
+    <p>To simplify tremendously, in relativity, curvature means that a particular configuration within spacetime is non-trivial, i.e., the presence of gravitational effects that cannot be transformed away by changing coordinates. In the aforementioned paper, my colleague Emmerson and I extend this idea to <em>epistemic curvature</em>, which represents the non-triviality of epistemic space. You see, we do not interpret locality or contextuality merely as being confined to a simple spacial location, but also to a location within <em>concept space</em>.</p>
+    
+    <p>As you may recall from <a href="https://polydactica.neocities.org/posts/2025-02-07-Towards-a-Theory-of-Organic-Museums.html">a previous post of mine</a>, I see truth not merely as an Aristotelian, binary, classical procedure, but one which evolves over time through a process of <em>selective revelation</em>. So, truth is not merely a static "thing," but a <em>process</em> (akin to <a href="https://intracorticallydermal.quora.com/Metaphysicalism-vs-Metaphysics-a-Whiteheadian-Voyage-into-the-Omniscape?ch=10&oid=194161013&share=0a11741d&srid=O2Jxa&target_type=post">Whiteheadian thought</a>). We are suggesting that, not only is truth subjectively variabel depending upon the faction in which it is discussed, but also that the measuring devices themselves, which operate as "truth-value classifiers" from a domain of discourse to a set of numbers, are also context-dependent.</p>
+    
+    <p>In fact, my colleague Monroe and I <a href="https://zenodo.org/records/14744376">went so far as to define</a> contexts themselves in such a way that they cannot be disentangled from the classificiation map. The exact formalism we used relies on something called a Grothendieck universe, which in its simplest form is a way of assigning an invariant to a representable category so that its representation is <em>stratified</em> within a hierarchy of larger and/or smaller universes.</p> It makes sense, at least to me, that when we want to think about inclusion functors, submanifolds, holons, etc., that we consider not just the classical objects (fields, rings), but also systems of universes, which encode the way these objects are embedded into others.</p>
+    
+    
+    <h2>Real-World Example</h2>
+<p>And this isn’t just abstract philosophy. In our paper, we work through a concrete example from string theory involving fluxes and D-branes. Imagine two regions of space, each supporting different kinds of field strength — think of them as neighborhoods wrapped around two distinct branes. A single string stretches between them. Each neighborhood has its own "measurement context" — a kind of logical environment where we evaluate physical propositions, like how much tension the string is under, or how strongly it's coupled to surrounding fields.</p>
+
+<p>Now, here's the interesting part: when you try to compare what’s true in one region with what’s true in the other, the answer can change. Maybe the proposition “this string is in its lowest energy state” is definitely true on one side, but only partially true on the other. That discrepancy reflects a kind of logical deformation which we call <em>epistemic curvature</em>. Just like gravity warps space, contextual differences can warp certainty.</p>
+
+<p>To measure this, we define something called the <em>contextual Laplacian</em>, which is a kind of second-order operator that compares how propositions behave across overlapping contexts. If everything lines up cleanly between the two regions, the Laplacian is zero, and the proposition holds globally. But if the field strengths, like the electric or magnetic fluxes, differ between regions, then the Laplacian becomes nonzero, and that tells us: the proposition is only locally, not globally, valid.</p>
+
+<p>In this way, our framework blends geometry, logic, and physics. The truth of a proposition isn’t binary or fixed: it lives somewhere in a stratified space of contexts. And the landscape it lives in can curve.</p>
+
+    
+      
+
+      <div id="nextprev"></div>
+    </div> <!-- end of div id="content" -->
+    <div id="footer"></div>
+    </div> <!-- end of div id="container" -->
+    <script src="../script.js"></script>
+  </body>
+</html>

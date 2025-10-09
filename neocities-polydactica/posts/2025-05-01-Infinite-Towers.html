@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Infinite Towers</title> <!-- If you leave title as "Blog Post", it will automatically be updated to the post title -->
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> 
+    <link href="../style/style.css" rel="stylesheet" type="text/css" media="all">    
+  </head>
+  <body>
+    <div id="container">
+    <div id="header">...</div>
+    <div id="content">
+      <h1 id="postTitleH1"></h1>
+      <h4 id="postDate"></h4>
+      
+      <p>If you're into high-energy physics, then maybe you've heard something about an "infinite tower" of bosons. The recent <a href="https://scitechdaily.com/string-theory-unravels-new-pi-formula-a-quantum-leap-in-mathematics/">discovery of an infinite number of identities for pi</a> by two young string theorists was essentially motivated by this idea; the equations are essentially infinite series, with a bosonic term that can be manipulated while leaving the result invariant.</p>
+      
+      <p>I want to kind of riff on this idea of "infinite towers," for a moment. The first thing that struck me was that we could replace "boson" with "local frame in a flat topos." Now, of course, I may be <a href="https://www.oliviacaramello.com/Unification/InitiativeOfClarificationResults.html">accused of posting "folklore"</a> by the senior topos theorists, but I digress.</p>
+      
+      <p>One of the most important concepts in topos theory is the notion of a <em>sub-object classifier</em>, which is essentially a skyscraper sheaf/bump function where the 0 and 1 elements are replaced with the bottom and top of a (complete) lattice.</p>
+    
+    <p>Now, I would like to expand the idea of sub-objects here under the framework of <em>symmetry-preserving iterated forcing</em>. Pick a countable ring K. K basically comes with a built-in order, meaning that we can "count" its elements successively. Now, let max(k)+n, where n is the multiplicative identity, <em>force</em> the inclusion of K into a new ring L. If n is countable, then L will be too; if not, then L will be uncountable as well. So far so good.</p>
+    
+    <p>Now, imagine that this <em>extension</em> of K <em>also</em> forces a <em>symmetric</em> "co-extension" J, where instead of adding in a new "largest" cardinal, we add in a new "smallest" one, whose <em>absolute</em> value is the same; i.e., we include an element -k-n.</p>
+    
+    <p>I would like to, instead of thinking about countable rings, think about arities: i.e., when we realize the cardinals k_i as <em>(k_i)-cells</em> in an infinity-category. Then, we can transition to thinking of <em>-(k_i)-cells</em> in a ±∞-category! Aha, this is like working with <a href="https://arxiv.org/abs/2102.09240">negative dimensions</a>!</p>
+    
+   	<p>If an n-category is a category whose highest arity is an n-arrow between two (n-1)-arrows, then each object is like a "0-category." What is a (-1)-category, then? Well, we need to understand what a (-1)-cell is. Since all of the +n-cells are <em>external</em>; i.e., pointing from one +(n-1)-cell to another, then we can think of the negative cells as corresponding to <em>internal</em> morphisms, or <em>sub-objects</em>, and the objects themselves are morphisms between these! Think of the category of Sets as a classic example. The "objects" are sets, and the "sub-objects" are elements; so, the set itself is like a morphism from the elements to itself. </p>
+    
+    <p> You may be thinking, a -1 category is a category whose highest arity is -1, right? Not exactly. You see, this would lead to considering sub-objects without objects, which is paradoxical. Instead, we need to think of ±1-categories! The 0-category/cell (object) can be thought of as a sort of "membrane" (very informally), but if we use countably infinite rings as an example, then the sub-objects are like the extension J mentioned above, and the positive morphisms are like the extension I. The union of I and J (even though this is the topological term, I use it here in a more topos-friendly/categorical sense, whatever that analogue looks like) is the ±1-category as a whole!</p>
+    
+    <p>For simplicity, let's call an extension of a category which forces a symmetric (negative) extension a <em>balanced extension</em>. Then, clearly the inaccessible cardinal ℵ which induces the forcing of the original extension has a <em>formal dual</em>, which we will call -ℵ due to notational limitations.</p>
+    
+    <p>From these considerations, and some others, it seems clear that raw arities aren't the only thing that matters. Consider this. Sometimes, when we say "a is smaller than b," we mean that a is strictly less than b. Other times, when we say "a is smaller than b," we might mean something closer to "the absolute value of a is smaller than the absolute value of b." That is to say, we are using a <em>normed version</em> of "size;" rather than measuring the position of a number on a number line, we really care more about its <em>distance from some origin.</em></p>
+    
+    <p>So, I am working now on getting a feel for what it would be like to have infinite towers of balanced extensions; sub-objects within sub-objects within... and so on. I am not sure yet where this will lead, but I can concretely say I am inspired by <a href="https://arxiv.org/abs/1904.09966">Barwick and Haine</a>. When I first disovered their works, I was looking into Grothendieck universes, and although I did not understand it, I could tell it was profound.</p>
+    
+    <p>The key takeaway here is this: we can create a new, synthetic version of category/topos theory that uses, instead of just natural numbers to parameterize the "height"/"level" of a morphism, we could perhaps significantly expand what arity even means, perhaps using type theory. And we already have some 'types' in category theory; monic, epic; but the conservative yet powerful extension I propose now is "<a href="https://en.wikipedia.org/wiki/Holon_(philosophy)">holon</a> categories."</p>
+     
+     
+    <div id="nextprev"></div>
+    </div> <!-- end of div id="content" -->
+    <div id="footer"></div>
+    </div> <!-- end of div id="container" -->
+  <!-- Here's the link to our JavaScript! -->
+  <script src="../script.js"></script>
+  </body>
+</html>
